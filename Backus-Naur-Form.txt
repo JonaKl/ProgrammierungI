@@ -1,0 +1,5 @@
+<IBAN> ::= <Land> <Prüfziffern> <Bankleitzahl> <Kontonummer>
+<Land> ::= DE
+<Bankleitzahl> ::= <Ortsnummer><Bankengruppe><individuelle Zahl>
+<Ortsnummer> ::= <Clearing-Gebiet><Bankbezirk>
+
