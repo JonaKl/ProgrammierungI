@@ -21,7 +21,7 @@ public class Rekursiv {
   }
 
   public static int fakultaet(int n){
-    while (n > 1) {
+    if (n > 1) {
       return n * fakultaet(n - 1);
     }
     return 1;
