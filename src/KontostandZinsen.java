@@ -24,7 +24,7 @@ public class KontostandZinsen {
       System.out.println("Kontostand positiv");
       System.out.println("Zu Beginn betraegt dein Kontostand: " + k + " Euro.");
       k *= 1.005;
-      System.out.println("Nach einem Jahr mit 0,5% Zinsen betraegt dein Kontostand: " + round(k) + " Euro.");
+      System.out.println("Nach einem Jahr mit 0,5% src.Methoden.Zinsen betraegt dein Kontostand: " + round(k) + " Euro.");
     } else if (k==0){
       System.out.println("Dein Konto ist leer");
     } else System.out.println("Du bist insolvent");

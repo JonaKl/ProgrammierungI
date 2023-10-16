@@ -1,3 +1,5 @@
+package src;
+
 import java.text.DecimalFormat;
 
 public class Kontostand {
@@ -6,7 +8,7 @@ public class Kontostand {
     for (int i = 0;i<5;i++){
       int kontostand = (int)(Math.random()*100000);
       System.out.println("Zu Beginn beträgt der Kontostand " + kontostand + " Euro.");
-      System.out.println("Nach einem Jahr mit 0,5% Zinsen beträgt der Kontostand " + df.format(kontostand*1.005) + " Euro.");
+      System.out.println("Nach einem Jahr mit 0,5% src.Methoden.Zinsen beträgt der Kontostand " + df.format(kontostand*1.005) + " Euro.");
     }
   }
 }

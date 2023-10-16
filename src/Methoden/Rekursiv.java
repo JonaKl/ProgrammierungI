@@ -1,3 +1,5 @@
+package src.Methoden;
+
 public class Rekursiv {
   public static void main(String[] args) {
     person("Joschua Tonn", 19, "Horrem");
