@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Methoden/Methoden.iml" filepath="$PROJECT_DIR$/Methoden/Methoden.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ProgrammierungI.iml" filepath="$PROJECT_DIR$/ProgrammierungI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ProgrammierungI.iml" filepath="$PROJECT_DIR$/.idea/ProgrammierungI.iml" />
     </modules>
   </component>
 </project>

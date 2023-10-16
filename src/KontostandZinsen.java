@@ -1,4 +1,4 @@
-public class Zinsen {
+public class KontostandZinsen {
   public static void main(String[] args){
     double kontostand1 = 0.35;
     double kontostand2 = -12.1;
