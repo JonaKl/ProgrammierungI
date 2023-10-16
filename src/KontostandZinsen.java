@@ -1,3 +1,5 @@
+package src;
+
 public class KontostandZinsen {
   public static void main(String[] args){
     double kontostand1 = 0.35;
