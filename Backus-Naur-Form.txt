@@ -3,7 +3,7 @@
 <Prüfziffern> ::= <Ziffer> <Ziffer>
 <Bankleitzahl> ::= <Ortsnummer> <Bankengruppe> <individuelle Zahl>
 <Ortsnummer> ::= <Clearing-Gebiet> <Bankbezirk>
-<Clearing-Gebiet> ::= <ZifferClearing> <ZifferClearing>
+<Clearing-Gebiet> ::= <ZifferClearing>
 <Bankbezirk> ::= <Ziffer> <Ziffer>
 <Bankengruppe> ::= <Ziffer>
 <individuelle Zahl> ::= <Ziffer> <Ziffer> <Ziffer> <Ziffer>
