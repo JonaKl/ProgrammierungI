@@ -1,0 +1,16 @@
+1. Nennen Sie ein Symbol, das im Deutschen ein NTS, aber im Englischen ein TS ist.
+    Das ss ist im Deutschen ein NTS, da es durch ß ersetzt werden kann, im Englischen aber nicht.
+
+2. Stellen Sie eine P-Regel für die deutsche Sprache auf.
+    S -> NP VP
+    S ist hierbei ein Satz, NP eine Nominalphrase bestehend aus einem Nomen und optionalen Adjektiven und VP ist eine Verbalphrase aus einem Verb und optionalen Objekten oder Adverbien.
+
+3. Warum heißt Typ1 „kontextsensitiv“, und was bedeutet „Kontext“ hier? Dabei kann es Ihnen helfen, wenn Sie Typ1 und Typ2 vergleichen.
+    Typ1 Grammatiken sind kontextsensitiv, weil sie auch auf der linken Seite Terminale besitzen können. Zudem muss die Länge auf beiden Seiten betrachtet werden.
+    Bei Typ2 Grammatiken hingegen darf links genau ein nichtterminales Symbol stehen, rechts darf eine beliebige Menge an zeichen vorhanden sein.
+
+4. Betrachten Sie bei Typ2 die Beispiele für verbotene Produktionsregeln: welchen zusätzlichen Fehler gibt es, sodass diese Umwandlung verboten ist (der im Video nicht erwähnt wird)?
+    Links darf zu dem nicht ein einzelnes terminales Symbol stehen
+
+5. Warum kann man sich nicht die Variable C sparen und einfach die Regel aufstellen B → 11B | ε ?
+    Nach der regulären Grammatik darf man per Definition ein NTS nur in ein TS und ein NTS oder in etwas leeres umwandeln, nicht aber in zwei TS und ein NTS.
