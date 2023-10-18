@@ -1,4 +1,4 @@
-package src;
+
 
 public class KontostandZinsen {
   public static void main(String[] args){

@@ -1,4 +1,4 @@
-package src.Methoden;
+package Methoden;
 
 public class Rekursiv {
   public static void main(String[] args) {
