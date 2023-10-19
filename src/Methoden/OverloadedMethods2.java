@@ -1,6 +1,6 @@
 package Methoden;
 
-public class UeberladeneMethodenA1 {
+public class OverloadedMethods2 {
   public static void main(String[] args) {
     person("Joschua Tonn", 19, "Horrem");
     person("Jona Kläß", "Kall");
