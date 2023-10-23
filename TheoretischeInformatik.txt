@@ -5,6 +5,8 @@
     S -> NP VP
     S ist hierbei ein Satz, NP eine Nominalphrase bestehend aus einem Nomen und optionalen Adjektiven und VP ist eine Verbalphrase aus einem Verb und optionalen Objekten oder Adverbien.
 
+    Auf ein Q folgt immer ein U
+
 3. Warum heißt Typ1 „kontextsensitiv“, und was bedeutet „Kontext“ hier? Dabei kann es Ihnen helfen, wenn Sie Typ1 und Typ2 vergleichen.
     Typ1 Grammatiken sind kontextsensitiv, weil sie auch auf der linken Seite Terminale besitzen können. Zudem muss die Länge auf beiden Seiten betrachtet werden.
     Bei Typ2 Grammatiken hingegen darf links genau ein nichtterminales Symbol stehen, rechts darf eine beliebige Menge an zeichen vorhanden sein.
