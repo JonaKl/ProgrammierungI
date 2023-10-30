@@ -1,33 +1,49 @@
-import java.util.Arrays;
+// https://www.baeldung.com/java-quicksort
 
 public class Quicksort {
+
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
-        quicksort(arr, 0, arr.length-1);
-        System.out.println(Arrays.toString(arr));
+        int[] toSort = { 9, -3, 5, 2, 6, 8, -6, 1, 3 };
+        // int[] toSort = { 9, -3, 5, 2, 6, 8, -6, 62, 60 };
+        quickSort(toSort, 0, toSort.length - 1);
     }
-    static void quicksort(int[] arr, int l, int r){
-        if (l < r){
-            int i = l;
-            int j = r;
-            int pivot = arr[(l+r)/2];
-            while (i <= j){
-                while (arr[i] < pivot){
-                    i++;
-                }
-                while (arr[j] > pivot){
-                    j--;
-                }
-                if (i <= j){
-                    int tmp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = tmp;
-                    i++;
-                    j--;
-                }
-            }
-            quicksort(arr, l, j);
-            quicksort(arr, i, r);
+
+    public static void quickSort(int[] arr, int begin, int end) {
+        if (begin < end) {
+            int partitionIndex = partition(arr, begin, end);
+
+            quickSort(arr, begin, partitionIndex-1);
+            quickSort(arr, partitionIndex+1, end);
         }
+    }
+
+    private static int partition(int[] arr, int begin, int end) {
+        int pivot = arr[end];
+        System.out.println("Now, pivot is arr[" + end + "] = " + pivot);
+
+        for (int j = begin; j < end; j++) {
+            if (arr[j] <= pivot) {
+                swapTwoValuesInArray(arr, begin, j);
+                begin++;
+            }
+        }
+        // Pivot wird ans Ende des aktuellen Sub-Arrays gesetzt: logisch, da alle diese Elemente kleiner sind
+        swapTwoValuesInArray(arr, begin, end);
+        printArray(arr);
+        System.out.println("present pivot is arr[" + (begin) + "] = " + arr[begin]);
+        return begin;
+    }
+
+    private static void printArray(int[] arr) {
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+
+    private static void swapTwoValuesInArray(int[] arr, int firstValue, int secondValue) {
+    	int swapTemp = arr[firstValue];
+        arr[firstValue] = arr[secondValue];
+        arr[secondValue] = swapTemp;
     }
 }
