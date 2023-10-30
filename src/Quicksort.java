@@ -1,13 +1,13 @@
 // https://www.baeldung.com/java-quicksort
 
 public class Quicksort {
-
+    static int swaps = 0;
     public static void main(String[] args) {
         int[] toSort = { 9, -3, 5, 2, 6, 8, -6, 1, 3 };
         // int[] toSort = { 9, -3, 5, 2, 6, 8, -6, 62, 60 };
         quickSort(toSort, 0, toSort.length - 1);
+        System.out.println("swaps: " + swaps);
     }
-
     public static void quickSort(int[] arr, int begin, int end) {
         if (begin < end) {
             int partitionIndex = partition(arr, begin, end);
@@ -45,5 +45,6 @@ public class Quicksort {
     	int swapTemp = arr[firstValue];
         arr[firstValue] = arr[secondValue];
         arr[secondValue] = swapTemp;
+        swaps++;
     }
 }
