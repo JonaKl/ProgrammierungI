@@ -13,5 +13,10 @@ public class Main {
         Fogel f = new Fogel(1, "Piepmatz");
         f.fliegen();
         System.out.println(f);
+        System.out.println(isInstanceOfTier(m));
+        System.out.println(isInstanceOfTier(f));
+    }
+    public static boolean isInstanceOfTier(Object o){
+        return o instanceof Tier;
     }
 }
