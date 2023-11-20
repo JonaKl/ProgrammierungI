@@ -1,9 +1,9 @@
 package Vererbung.Lebewesen;
 
-public class Elefant extends Lebewesen{
+public class Elefant extends Tier{
     private String lebensraum;
     public Elefant(int alter, String name, String lebensraum){
-        super(4, alter, name);
+        super(4, alter, name, false);
         this.lebensraum = lebensraum;
     }
 
