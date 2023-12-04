@@ -9,6 +9,7 @@ public class SparbuchTest {
         for (Sparbuch s : sparbuch) {
             Utilities.zeige(s);
         }
+        System.out.println(Utilities.n);
 
     }
 }
